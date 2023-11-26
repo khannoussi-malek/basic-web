@@ -117,7 +117,31 @@ HTML documents are built using HTML elements, defined by a start tag, content, a
 ```html
 <img src="image.jpg" alt="Description of the image" />
 ```
-<img src="https://www.microsoftissatso.tn/_next/image?url=%2Fimages%2Fmain-logo.png&w=96&q=75" alt="Description of the image" />
+<img src="https://www.microsoftissatso.tn/_next/image?url=%2Fimages%2Fmain-logo.png&w=96&q=75" alt="Description of the image" width="100px" />
+<hr/>
+
+- #### Videos:
+```html
+<video width="320" height="240" controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+```
+<video width="320" height="240" controls>
+  <source src="https://www.youtube.com/watch?v=sxl3cQaEIjQ" type="video/mp4">
+</video>
+
+<hr/>
+
+- #### Audio:
+```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+```
+<audio controls>
+  <source src="https://www.youtube.com/watch?v=sxl3cQaEIjQ" type="audio/mpeg">
+</audio>
+
 <hr/>
 
 ##### Attributes
@@ -125,6 +149,8 @@ HTML elements can have attributes that provide additional information about the 
 ```html
 <a href="https://www.example.com" target="_blank">Visit Example.com in a new tab</a>
 ```
+<a href="https://github.com/khannoussi-malek" target="_black" > this is a link </a>
+
 Here, `href` is an attribute specifying the hyperlink, and `target="_blank"` is an attribute opening the link in a new tab.
 
 
