@@ -126,8 +126,7 @@ HTML documents are built using HTML elements, defined by a start tag, content, a
   <source src="video.mp4" type="video/mp4">
 </video>
 ```
-<video width="320" height="240" controls>
-  <source src="https://www.youtube.com/watch?v=sxl3cQaEIjQ" type="video/mp4">
+<video width="320" height="240" controls src="./workshop/video/video.mp4">
 </video>
 
 <hr/>
@@ -139,7 +138,7 @@ HTML documents are built using HTML elements, defined by a start tag, content, a
 </audio>
 ```
 <audio controls>
-  <source src="https://www.youtube.com/watch?v=sxl3cQaEIjQ" type="audio/mpeg">
+  <source src="./workshop/audio/audio.mp3" type="audio/mpeg">
 </audio>
 
 <hr/>
