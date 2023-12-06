@@ -1,156 +1,200 @@
-# HTML Basics
+# HTML Elements Documentation
+## Useful links
+- [HTML Input types](https://www.w3schools.com/html/html_form_input_types.asp)
+- [HTML Input examples](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+## `<div>`
 
-## Introduction
+The `<div>` element is a generic container that is used to group other HTML elements together. It does not carry any specific meaning or purpose on its own and is primarily used for styling and layout purposes.
 
-HTML, which stands for HyperText Markup Language, is the standard markup language used to create and design web pages. It forms the basic structure of a web page by defining various elements and their arrangement.
-
-## HTML Document Structure
-
-A minimal HTML document includes the following structure:
-
+**Syntax:**
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Page Title</title>
-</head>
-<body>
-
-    <!-- Content goes here -->
-
-</body>
-</html>
+<div>
+  <!-- Content goes here -->
+</div>    
 ```
-- `<!DOCTYPE html>`: Declaration specifying the HTML version being used (HTML5).
-- `<html>`: The root element wrapping the entire HTML document.
-- `<head>`: Contains meta-information about the HTML document.
-- `<title>`: Sets the title of the HTML document.
-- `<body>`: Contains the content of the HTML document.
-
-#### HTML Elements
-HTML documents are built using HTML elements, defined by a start tag, content, and an end tag. For example:
+##### Example:
 ```html
-<p>This is a paragraph.</p>
-
+<div>
+  <h1>Welcome to our website!</h1>
+  <p>Here is some content...</p>
+</div>
 ```
-- `<p>` is the start tag.
-- `This is a paragraph.` is the content.
-- `</p>` is the end tag.
+<div style="background-color:#abc; border-radius:1rem; padding:1rem;">
+  <h1>Welcome to our website!</h1>
+  <p>Here is some content...</p>
+</div>
 
-#### Common HTML Elements
-- #### Headings:
+
+
+## `<form>`
+
+The `<form>` element represents a section of an HTML document that contains interactive controls for submitting data to a server. It is used to create web forms, such as login forms, registration forms, and contact forms.
+
+**Syntax:**
 ```html
-<h1>This is a heading 1</h1>
+<form action="/submit" method="post">
+  <!-- Form controls go here -->
+</form> 
 ```
-<h1>This is a heading 1</h1>
-<hr/>
-
+##### Example:
 ```html
-<h2>This is a heading 2</h2>
+<form action="/login" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Login</button>
+</form>
 ```
-<h2>This is a heading 2</h2>
+<form action="/login" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
 
-<hr/>
-    
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Login</button>
+</form>
+
+
+
+## `<input>`
+
+The `<input>` element is used to create various types of input controls within a form. It allows users to enter and submit data.
+
+**Syntax:**
 ```html
-<h3>This is a heading 3</h3>
+<input type="text" name="input_name" id="input_id" value="default_value">
 ```
-<h3>This is a heading 3</h3>
-<hr/>
-
-```html
-<h4>This is a heading 4</h4>
-```
-<h4>This is a heading 4</h4>
-<hr/>
-
-```html
-<h5>This is a heading 5</h5>
-```
-<h5>This is a heading 5</h5>
-<hr/>
-
-```html
-<h6>This is a heading 6</h6>
-```
-<h6>This is a heading 6</h6>
-<hr/>
-
-- #### Paragraphs:
-```html
-<p>This is a paragraph.</p>
-```
-<p>This is a paragraph.</p>
-<hr/>
-
-- #### Line Breaks:
-```html
-<p>This is a paragraph.<br>This is another paragraph.</p>
-```
-<hr/>
-
-- #### Lists:
-```html
+##### Example:
 <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
+<li>
+<h5>text:</h5>
+
+```html
+<label for="username">Username</label>
+<input type="text" name="username" id="username" placeholder="Enter your username" required>
+```
+<fieldset>
+<label for="username">Username</label>
+<input type="text" name="username" id="username" placeholder="Enter your username" required>
+</fieldset>
+</li>
+<li>
+<h5>password:</h5>
+
+```html
+<label for="password">Password</label>
+<input type="password" name="password" id="password" placeholder="Enter your password" required>
+```
+<label for="password">Password</label>
+<input type="password" name="password" id="password" placeholder="Enter your password" required>
+
+</li>
+<li>
+<h5>Checkbox:</h5>
+
+```html
+  <p>Subscribe to :</p>
+    <input type="checkbox" id="subscribe">
+    <label for="subscribe">Newsletter</label>
+    <br/>
+    <input type="checkbox" id="youtube">
+    <label for="youtube">Youtube</label>
+    <br/>
+    <input type="checkbox" id="somthing">
+    <label for="somthing">Somthing</label>
+    <br/>
+```
+<fieldset>
+<p>Subscribe to :</p>
+    <input type="checkbox" id="subscribe">
+    <label for="subscribe">Newsletter</label>
+    <br/>
+    <input type="checkbox" id="youtube">
+    <label for="youtube">Youtube</label>
+    <br/>
+    <input type="checkbox" id="somthing">
+    <label for="somthing">Somthing</label>
+    <br/>
+</fieldset>
+</li>
+<li>
+<h5>Checkbox:</h5>
+
+```html
+  <p>Subscribe to :</p>
+    <input type="checkbox" id="subscribe"/>
+    <label for="subscribe">Newsletter</label>
+    <br/>
+    <input type="checkbox" id="youtube"/>
+    <label for="youtube">Youtube</label>
+    <br/>
+    <input type="checkbox" id="somthing"/>
+    <label for="somthing">Somthing</label>
+    <br/>
+
+```
+<fieldset>
+  <p>Subscribe to :</p>
+  <input type="checkbox" id="subscribe"/>
+  <label for="subscribe">Newsletter</label>
+  <br/>
+  <input type="checkbox" id="youtube"/>
+  <label for="youtube">Youtube</label>
+  <br/>
+  <input type="checkbox" id="somthing"/>
+  <label for="somthing">Somthing</label>
+  <br/>
+</fieldset> 
+</li>
+
+<li>
+    <h5>Radio:</h5>
+
+  ```html
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label>
+    <br/>
+    ```
+<fieldset>
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender">
+    <label for="female">Female</label>
+    <br/>
+</fieldset>
+</li>
+<li>
+    <h5>Date</h5>
+
+
+```html
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+```
+<fieldset>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+</fieldset>
+
+</li>
+
+<li>
+    <h5>File</h5>
+
+```html
+    <label for="myfile">Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+```
+
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</li>
 </ul>
-
-<ol>
-  <li>Item 1</li>
-  <li>Item 2</li>
-</ol>
-```
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-</ul>
-
-<ol>
-  <li>Item 1</li>
-  <li>Item 2</li>
-</ol>
-
-<hr/>
-
-- #### images:
-```html
-<img src="image.jpg" alt="Description of the image" />
-```
-<img src="https://www.microsoftissatso.tn/_next/image?url=%2Fimages%2Fmain-logo.png&w=96&q=75" alt="Description of the image" width="100px" />
-<hr/>
-
-- #### Videos:
-```html
-<video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
-</video>
-```
-<video width="320" height="240" controls src="./workshop/video/video.mp4">
-</video>
-
-<hr/>
-
-- #### Audio:
-```html
-<audio controls>
-  <source src="audio.mp3" type="audio/mpeg">
-</audio>
-```
-<audio controls>
-  <source src="./workshop/audio/audio.mp3" type="audio/mpeg">
-</audio>
-
-<hr/>
-
-##### Attributes
-HTML elements can have attributes that provide additional information about the element. For example
-```html
-<a href="https://www.example.com" target="_blank">Visit Example.com in a new tab</a>
-```
-<a href="https://github.com/khannoussi-malek" target="_black" > this is a link </a>
-
-Here, `href` is an attribute specifying the hyperlink, and `target="_blank"` is an attribute opening the link in a new tab.
-
-
-This is a basic overview, and there are many more HTML elements and attributes to explore as you delve deeper into web development. HTML provides the foundation for building the structure of a web page, often combined with CSS for styling and JavaScript for interactivity.
