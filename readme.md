@@ -48,16 +48,6 @@ The `<form>` element represents a section of an HTML document that contains inte
   <button type="submit">Login</button>
 </form>
 ```
-<form action="/login" method="post">
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
-
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
-
-  <button type="submit">Login</button>
-</form>
-
 
 
 ## `<input>`
@@ -77,10 +67,7 @@ The `<input>` element is used to create various types of input controls within a
 <label for="username">Username</label>
 <input type="text" name="username" id="username" placeholder="Enter your username" required>
 ```
-<fieldset>
-<label for="username">Username</label>
-<input type="text" name="username" id="username" placeholder="Enter your username" required>
-</fieldset>
+
 </li>
 <li>
 <h5>password:</h5>
@@ -89,8 +76,7 @@ The `<input>` element is used to create various types of input controls within a
 <label for="password">Password</label>
 <input type="password" name="password" id="password" placeholder="Enter your password" required>
 ```
-<label for="password">Password</label>
-<input type="password" name="password" id="password" placeholder="Enter your password" required>
+
 
 </li>
 <li>
@@ -108,18 +94,6 @@ The `<input>` element is used to create various types of input controls within a
     <label for="somthing">Somthing</label>
     <br/>
 ```
-<fieldset>
-<p>Subscribe to :</p>
-    <input type="checkbox" id="subscribe">
-    <label for="subscribe">Newsletter</label>
-    <br/>
-    <input type="checkbox" id="youtube">
-    <label for="youtube">Youtube</label>
-    <br/>
-    <input type="checkbox" id="somthing">
-    <label for="somthing">Somthing</label>
-    <br/>
-</fieldset>
 </li>
 <li>
 <h5>Checkbox:</h5>
@@ -137,18 +111,7 @@ The `<input>` element is used to create various types of input controls within a
     <br/>
 
 ```
-<fieldset>
-  <p>Subscribe to :</p>
-  <input type="checkbox" id="subscribe"/>
-  <label for="subscribe">Newsletter</label>
-  <br/>
-  <input type="checkbox" id="youtube"/>
-  <label for="youtube">Youtube</label>
-  <br/>
-  <input type="checkbox" id="somthing"/>
-  <label for="somthing">Somthing</label>
-  <br/>
-</fieldset> 
+
 </li>
 
 <li>
@@ -161,15 +124,8 @@ The `<input>` element is used to create various types of input controls within a
     <input type="radio" id="female" name="gender">
     <label for="female">Female</label>
     <br/>
-    ```
-<fieldset>
-    <label>Gender:</label>
-    <input type="radio" id="male" name="gender">
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender">
-    <label for="female">Female</label>
-    <br/>
-</fieldset>
+  ```
+
 </li>
 <li>
     <h5>Date</h5>
@@ -179,10 +135,6 @@ The `<input>` element is used to create various types of input controls within a
     <label for="birthday">Birthday:</label>
     <input type="date" id="birthday" name="birthday">
 ```
-<fieldset>
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday">
-</fieldset>
 
 </li>
 
@@ -194,7 +146,5 @@ The `<input>` element is used to create various types of input controls within a
     <input type="file" id="myfile" name="myfile">
 ```
 
-  <label for="myfile">Select a file:</label>
-  <input type="file" id="myfile" name="myfile">
 </li>
 </ul>
